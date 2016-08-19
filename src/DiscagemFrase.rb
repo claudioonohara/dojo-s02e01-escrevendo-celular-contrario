@@ -1,17 +1,17 @@
 class DiscagemFrase
 
   def initialize
-    @@resultado = ''
+    @resultado = ''
   end
 
   def disca(frase)
 
      frase.each_char do |char|
         if  char =~ /a|b|c/
-          @@resultado = 2
+          @resultado = 2
         end
      end
-     @@resultado
+     @resultado
   end
 
 end
