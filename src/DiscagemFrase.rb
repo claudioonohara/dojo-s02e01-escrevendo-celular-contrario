@@ -24,9 +24,7 @@ class DiscagemFrase
        @resultado << '8'
     elsif char =~ /w|x|y|z/
        @resultado << '9'
-    elsif char == '-'
-      @resultado << '-'
-    elsif char =~ /[0-9#*]/
+    elsif char =~ /[0-9#*-]/
       @resultado << char
     else
       raise ArgumentError.new("fiiiii isso nao existe no teclado do telefone!!")
